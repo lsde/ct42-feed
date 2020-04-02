@@ -28,7 +28,7 @@ try:
 
         msg = when + what
         if msg != old_msg:
-            os.system('notify-send "{0}" "{1} : {2}"'.format(what[:68], when, what))
+            os.system('notify-send \"{0}\" \"{1} : {2}\"'.format(what[:68], when, what))
         old_msg = msg
 
         time.sleep(args.sleep)
